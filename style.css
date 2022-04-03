@@ -1,0 +1,12 @@
+.container{
+    margin: 10% 10% 4% 10%;
+}
+
+.content{
+    font-weight:400px;
+    font-size:large;
+}
+
+a {
+    text-decoration: none;
+}

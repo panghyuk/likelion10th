@@ -1,4 +1,4 @@
-"""likelion URL Configuration
+"""basic URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -19,5 +19,9 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.showmain)
+    path('', views.main, name="showmain"),
+    path('posts/', views.posts, name="posts"),
+    path('<str:id>', views.detail, name="detail"),
+    path('new/', views.new, name="new"),
+    path('create/', views.create, name="create"),
 ]
